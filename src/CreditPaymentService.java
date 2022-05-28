@@ -2,68 +2,67 @@ public class CreditPaymentService {
     public double calculate(double loanTime) {
         double creditService;                     //расчет ежемесячного платежа
         double credit = 1_000_000;                //сумма кредита
-        double persent = 9.99;                    //годовая процентная ставка
-        double minPersentForMounth;               //ежемесячная процентная ставка
-        double kannyitet;
+        double percent = 9.99;                    //годовая процентная ставка
+        double minPercentPerMonth;               //ежемесячная процентная ставка
+        double annuity;
 
 
-        minPersentForMounth = (persent / 100 / 12);
+        minPercentPerMonth = (percent / 100 / 12);
 
-        double minPersentForMounth1;              //замена математической функции переменной
+        double minPercentPerMonth1;              //замена математической функции переменной
 
-        minPersentForMounth1=1+minPersentForMounth;
+        minPercentPerMonth1 = 1 + minPercentPerMonth;
 
-        double minPersentForMounth112;            //замена математической функции переменной
+        double minPercentPerMonth112;            //замена математической функции переменной
 
-        minPersentForMounth112=(minPersentForMounth1 * minPersentForMounth1 *    //возведение в степень 12//
-                minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-            * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-            * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-            * minPersentForMounth1);
-
-
-        double minPersentForMounth124 = (minPersentForMounth1 * minPersentForMounth1  //возведение в степень 24//
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1 
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1);
+        minPercentPerMonth112 = (minPercentPerMonth1 * minPercentPerMonth1 *    //возведение в степень 12//
+                minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1);
 
 
-        double minPersentForMounth136 = (minPersentForMounth1 * minPersentForMounth1 * //возведение в степень 36//
-                minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1 *
-                minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1 *
-                minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1 * minPersentForMounth1 * minPersentForMounth1
-                * minPersentForMounth1);
-
-        if (loanTime == 1){
-            kannyitet = (minPersentForMounth * minPersentForMounth112)/(minPersentForMounth112 - 1);
-
-        } else if (loanTime == 2){
-                kannyitet = (minPersentForMounth * minPersentForMounth124)/(minPersentForMounth124 - 1);
-
-            } else{
-            kannyitet = (minPersentForMounth * minPersentForMounth136)/(minPersentForMounth136 - 1);
-            }
+        double minPercentPerMonth124 = (minPercentPerMonth1 * minPercentPerMonth1  //возведение в степень 24//
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1);
 
 
-        creditService=credit*kannyitet;
+        double minPercentPerMonth136 = (minPercentPerMonth1 * minPercentPerMonth1 * //возведение в степень 36//
+                minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1 *
+                minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1 *
+                minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1 * minPercentPerMonth1 * minPercentPerMonth1
+                * minPercentPerMonth1);
 
+        if (loanTime == 1) {
+            annuity = (minPercentPerMonth * minPercentPerMonth112) / (minPercentPerMonth112 - 1);
 
+        } else if (loanTime == 2) {
+            annuity = (minPercentPerMonth * minPercentPerMonth124) / (minPercentPerMonth124 - 1);
 
-        return creditService=(int) creditService;
-
+        } else {
+            annuity = (minPercentPerMonth * minPercentPerMonth136) / (minPercentPerMonth136 - 1);
         }
 
+
+        creditService = credit * annuity;
+
+
+        return creditService = (int) creditService;
+
     }
+
+}
